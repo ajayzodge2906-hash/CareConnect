@@ -39,19 +39,4 @@ npm install
 npm run dev
 ```
 
-## Vercel Deployment Instructions
 
-Follow these instructions to deploy CareConnect to Vercel:
-
-1. **Vercel CLI Method**:
-   - Install Vercel CLI globally: `npm install -g vercel`
-   - Run `vercel` in the root of the project.
-   - Follow the prompts to log in and deploy.
-
-2. **GitHub Integration Method (Recommended)**:
-   - Push this project to a GitHub repository.
-   - Go to [Vercel](https://vercel.com/) and log in.
-   - Click **Add New** > **Project**.
-   - Import your CareConnect repository.
-   - Keep default settings (Vercel automatically detects Vite + React configuration).
-   - Click **Deploy**.
