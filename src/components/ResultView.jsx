@@ -10,7 +10,6 @@ export default function ResultView({ submissionData, analysisData, onReset, onGo
     <div className="mx-auto max-w-xl px-4 py-10 sm:px-6">
       <div className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 sm:p-8">
         
-        {/* Success Banner */}
         <div className="flex flex-col items-center text-center mb-8">
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-50 text-green-500 mb-3 ring-8 ring-green-50/50">
             <CheckCircle2 className="h-6 w-6" />
@@ -23,7 +22,6 @@ export default function ResultView({ submissionData, analysisData, onReset, onGo
           </p>
         </div>
 
-        {/* Submitted Information Section - Soothing Light Sage Background */}
         <div className="bg-primary-50/50 border border-primary-100 rounded-xl p-5 mb-6 shadow-sm">
           <div className="flex items-center space-x-2 border-b border-primary-200/60 pb-3 mb-4">
             <User className="h-4 w-4 text-primary-500" />
@@ -33,7 +31,6 @@ export default function ResultView({ submissionData, analysisData, onReset, onGo
           </div>
           
           <dl className="space-y-3.5">
-            {/* Name */}
             <div className="flex items-start space-x-3">
               <User className="mt-0.5 h-4 w-4 text-slate-400" />
               <div>
@@ -44,7 +41,6 @@ export default function ResultView({ submissionData, analysisData, onReset, onGo
               </div>
             </div>
 
-            {/* Email & Phone side-by-side */}
             <div className="grid grid-cols-2 gap-4">
               <div className="flex items-start space-x-3">
                 <Mail className="mt-0.5 h-4 w-4 text-slate-400" />
@@ -67,7 +63,6 @@ export default function ResultView({ submissionData, analysisData, onReset, onGo
               </div>
             </div>
 
-            {/* Category */}
             <div className="flex items-start space-x-3 border-t border-primary-200/40 pt-3">
               <HeartPulse className="mt-0.5 h-4 w-4 text-slate-400" />
               <div>
@@ -78,7 +73,6 @@ export default function ResultView({ submissionData, analysisData, onReset, onGo
               </div>
             </div>
 
-            {/* Original Description */}
             <div className="flex items-start space-x-3 border-t border-primary-200/40 pt-3">
               <FileText className="mt-0.5 h-4 w-4 text-slate-400" />
               <div>
@@ -91,23 +85,19 @@ export default function ResultView({ submissionData, analysisData, onReset, onGo
           </dl>
         </div>
 
-        {/* Smart Request Analysis Card - Light Sage Background & Green Accent Borders */}
         <div className="bg-primary-50/50 border border-primary-200 rounded-xl p-5 mb-8 shadow-sm">
           
-          {/* Header section with Badge */}
           <div className="flex items-center justify-between mb-4 border-b border-primary-200/60 pb-3">
             <div className="flex items-center space-x-2 text-slate-800">
               <Sparkles className="h-4.5 w-4.5 text-primary-600" />
               <h4 className="text-sm font-extrabold tracking-tight uppercase">Request Analysis</h4>
             </div>
             
-            {/* AI-Assisted Request Analysis Badge */}
             <span className="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-[10px] font-bold text-primary-750 ring-1 ring-inset ring-primary-700/10">
               AI-Assisted Request Analysis
             </span>
           </div>
 
-          {/* Key Highlights */}
           <div>
             <h5 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2.5 flex items-center">
               <ShieldCheck className="h-4 w-4 text-primary-600 mr-1.5" />
@@ -125,7 +115,6 @@ export default function ResultView({ submissionData, analysisData, onReset, onGo
           
         </div>
 
-        {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-3">
           <button
             onClick={onReset}

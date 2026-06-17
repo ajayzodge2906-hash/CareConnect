@@ -23,7 +23,6 @@ export default function SupportForm({ onSubmit, onCancel }) {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    // Clear specific error on change
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: '' }));
     }
@@ -38,7 +37,6 @@ export default function SupportForm({ onSubmit, onCancel }) {
     e.preventDefault();
     const newErrors = {};
 
-    // Required fields check
     if (!formData.fullName.trim()) newErrors.fullName = 'Full Name is required';
     
     if (!formData.email.trim()) {
@@ -53,7 +51,6 @@ export default function SupportForm({ onSubmit, onCancel }) {
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
-      // Scroll to first error
       const firstErrorKey = Object.keys(newErrors)[0];
       const element = document.getElementsByName(firstErrorKey)[0];
       if (element) {
@@ -63,7 +60,6 @@ export default function SupportForm({ onSubmit, onCancel }) {
       return;
     }
 
-    // Process submission with simulated AI computation delay
     setIsSubmitting(true);
     setTimeout(() => {
       setIsSubmitting(false);
@@ -75,7 +71,6 @@ export default function SupportForm({ onSubmit, onCancel }) {
     <div className="mx-auto max-w-xl px-4 py-10 sm:px-6">
       <div className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-300 p-6 sm:p-8">
         
-        {/* Form Header */}
         <div className="mb-8 border-b border-slate-100 pb-5">
           <h2 className="text-2xl font-bold tracking-tight text-slate-900">
             Submit Support Request
@@ -86,7 +81,6 @@ export default function SupportForm({ onSubmit, onCancel }) {
         </div>
 
         {isSubmitting ? (
-          /* Loading State */
           <div className="flex flex-col items-center justify-center py-12">
             <svg
               className="h-10 w-10 animate-spin text-primary-600"
@@ -112,10 +106,8 @@ export default function SupportForm({ onSubmit, onCancel }) {
             <p className="text-xs text-slate-400 mt-1">Generating concise request summary for volunteers...</p>
           </div>
         ) : (
-          /* Form Content */
           <form onSubmit={handleSubmit} className="space-y-6" noValidate>
             
-            {/* Section 1: Personal Details */}
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <User className="h-5 w-5 text-primary-600" />
@@ -125,7 +117,6 @@ export default function SupportForm({ onSubmit, onCancel }) {
               </div>
               
               <div className="space-y-4">
-                {/* Full Name */}
                 <div>
                   <label htmlFor="fullName" className="block text-sm font-medium text-slate-700">
                     Full Name <span className="text-red-500">*</span>
@@ -154,7 +145,6 @@ export default function SupportForm({ onSubmit, onCancel }) {
                   )}
                 </div>
 
-                {/* Email Address */}
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-slate-700">
                     Email Address <span className="text-red-500">*</span>
@@ -183,7 +173,6 @@ export default function SupportForm({ onSubmit, onCancel }) {
                   )}
                 </div>
 
-                {/* Phone Number */}
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-slate-700">
                     Phone Number <span className="text-red-500">*</span>
@@ -214,10 +203,8 @@ export default function SupportForm({ onSubmit, onCancel }) {
               </div>
             </div>
 
-            {/* Divider */}
             <div className="border-t border-slate-100 my-6"></div>
 
-            {/* Section 2: Support Details */}
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <ClipboardList className="h-5 w-5 text-primary-600" />
@@ -227,7 +214,6 @@ export default function SupportForm({ onSubmit, onCancel }) {
               </div>
               
               <div className="space-y-4">
-                {/* Category Dropdown */}
                 <div>
                   <label htmlFor="category" className="block text-sm font-medium text-slate-700">
                     Category <span className="text-red-500">*</span>
@@ -261,7 +247,6 @@ export default function SupportForm({ onSubmit, onCancel }) {
                   )}
                 </div>
 
-                {/* Description Textarea */}
                 <div>
                   <label htmlFor="description" className="block text-sm font-medium text-slate-700">
                     Describe your request/concern <span className="text-red-500">*</span>
@@ -292,7 +277,6 @@ export default function SupportForm({ onSubmit, onCancel }) {
               </div>
             </div>
 
-            {/* Buttons */}
             <div className="pt-4 flex justify-end space-x-3">
               <button
                 type="button"

@@ -7,7 +7,7 @@ import ChatbotWidget from './components/ChatbotWidget';
 import { analyzeSupportRequest } from './utils/aiSummary';
 
 export default function App() {
-  const [view, setView] = useState('home'); // 'home' | 'form' | 'result'
+  const [view, setView] = useState('home');
   const [submissionData, setSubmissionData] = useState(null);
   const [analysisData, setAnalysisData] = useState(null);
 
@@ -40,10 +40,8 @@ export default function App() {
 
   return (
     <div className="flex min-h-screen flex-col bg-neutral-bg">
-      {/* Header */}
       <Header onViewChange={setView} currentView={view} />
 
-      {/* Main Content */}
       <main className="flex-grow">
         {view === 'home' && (
           <HomeView onStartRequest={handleStartRequest} />
@@ -66,10 +64,8 @@ export default function App() {
         )}
       </main>
 
-      {/* Floating FAQ Chatbot Widget */}
       <ChatbotWidget />
 
-      {/* Simple Footer */}
       <footer className="w-full border-t border-slate-200 bg-white py-6">
         <div className="mx-auto max-w-5xl px-4 text-center sm:px-6">
           <p className="text-xs text-slate-400">

@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  /* Soothing Sage Green and Forest Green Scale */
   --color-primary-50: #f1f7f3;
   --color-primary-100: #e2ece5;
   --color-primary-200: #c6dbcd;
@@ -13,7 +12,6 @@
   --color-primary-800: #244430;
   --color-primary-900: #1b3324;
 
-  /* Calming Teal Accents */
   --color-accent-50: #f0fdfa;
   --color-accent-100: #ccfbf1;
   --color-accent-200: #99f6e4;
@@ -21,7 +19,6 @@
   --color-accent-600: #0d9488;
   --color-accent-700: #0f766e;
 
-  /* Off-White Mint Neutral Background */
   --color-neutral-bg: #f5f8f6;
 }
 

@@ -4,11 +4,9 @@ import { ArrowRight, PlusCircle, ShieldAlert, HeartHandshake, Sparkles } from 'l
 export default function HomeView({ onStartRequest }) {
   return (
     <div className="relative overflow-hidden">
-      {/* Subtle Sage Healthcare-themed Gradient Hero Background */}
       <div className="absolute inset-x-0 top-0 -z-10 h-[500px] bg-gradient-to-b from-primary-50/70 via-primary-50/10 to-transparent"></div>
 
       <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:py-20">
-        {/* Hero Content */}
         <div className="text-center">
           <div className="inline-flex items-center justify-center space-x-1.5 rounded-full bg-primary-100/80 px-3 py-1 text-xs font-semibold text-primary-850 ring-1 ring-inset ring-primary-700/20 mb-6 shadow-sm">
             <HeartHandshake className="h-3.5 w-3.5 text-primary-600" />
@@ -40,7 +38,6 @@ export default function HomeView({ onStartRequest }) {
           </div>
         </div>
 
-        {/* NGO Use Case Section */}
         <div className="mt-20 bg-white rounded-2xl border border-slate-200 p-8 shadow-sm">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900">

@@ -4,7 +4,6 @@ export default function Header({ onViewChange, currentView }) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
-        {/* Brand/Logo */}
         <button
           onClick={() => onViewChange('home')}
           className="flex items-center space-x-2 text-primary-600 hover:text-primary-700 focus:outline-none transition-colors"
@@ -25,7 +24,6 @@ export default function Header({ onViewChange, currentView }) {
           <span className="text-xl font-bold tracking-tight text-slate-900">CareConnect</span>
         </button>
 
-        {/* Simple Navigation */}
         <nav className="flex space-x-4">
           <button
             onClick={() => onViewChange('home')}
