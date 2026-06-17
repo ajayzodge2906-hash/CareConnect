@@ -91,3 +91,4 @@ export function analyzeSupportRequest(description, category) {
     highlights: finalHighlights
   };
 }
+
