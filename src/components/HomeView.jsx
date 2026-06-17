@@ -42,48 +42,38 @@ export default function HomeView({ onStartRequest }) {
 
         {/* NGO Use Case Section */}
         <div className="mt-20 bg-white rounded-2xl border border-slate-200 p-8 shadow-sm">
-          <div className="text-center">
+          <div className="text-center mb-8">
             <h2 className="text-2xl font-bold tracking-tight text-slate-900">
-              How NGOs Can Use This
+              How NGOs Can Use CareConnect
             </h2>
             <p className="mt-2 text-sm text-slate-500 max-w-lg mx-auto leading-relaxed">
-              CareConnect is designed to optimize how community health volunteers triage and manage support requests.
+              CareConnect is designed to optimize how community health volunteers triage, manage, and coordinate support requests.
             </p>
           </div>
           
-          <div className="mt-10 grid gap-6 sm:grid-cols-3">
-            {/* Card 1 */}
-            <div className="flex flex-col rounded-2xl border border-slate-100 bg-slate-50/50 p-6 shadow-sm hover:shadow-md hover:border-primary-200/50 hover:bg-white transition-all duration-200 group">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-100 text-primary-650 mb-5 shadow-sm group-hover:scale-105 transition-transform duration-200">
-                <PlusCircle className="h-5 w-5" />
-              </div>
-              <h3 className="font-semibold text-slate-900 text-base">Collect requests online</h3>
-              <p className="mt-2 text-sm text-slate-500 leading-relaxed">
-                Provide a straightforward online portal for patients to describe and register their medical requests.
-              </p>
-            </div>
-
-            {/* Card 2 */}
-            <div className="flex flex-col rounded-2xl border border-slate-100 bg-slate-50/50 p-6 shadow-sm hover:shadow-md hover:border-primary-200/50 hover:bg-white transition-all duration-200 group">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-100 text-primary-650 mb-5 shadow-sm group-hover:scale-105 transition-transform duration-200">
-                <ShieldAlert className="h-5 w-5" />
-              </div>
-              <h3 className="font-semibold text-slate-900 text-base">Understand concerns</h3>
-              <p className="mt-2 text-sm text-slate-500 leading-relaxed">
-                Filter and view requests cleanly categorized by medication needs, appointments, or general health issues.
-              </p>
-            </div>
-
-            {/* Card 3 */}
-            <div className="flex flex-col rounded-2xl border border-slate-100 bg-slate-50/50 p-6 shadow-sm hover:shadow-md hover:border-primary-200/50 hover:bg-white transition-all duration-200 group">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary-100 text-primary-650 mb-5 shadow-sm group-hover:scale-105 transition-transform duration-200">
-                <Sparkles className="h-5 w-5" />
-              </div>
-              <h3 className="font-semibold text-slate-900 text-base">Assess Urgency & Highlights</h3>
-              <p className="mt-2 text-sm text-slate-500 leading-relaxed">
-                Volunteers can instantly read key request highlights and review urgency scores to prioritize emergency needs.
-              </p>
-            </div>
+          <div className="max-w-2xl mx-auto">
+            <ul className="space-y-4">
+              <li className="flex items-start space-x-3 text-slate-700 leading-relaxed text-sm sm:text-base">
+                <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-primary-100 text-primary-650 font-bold">•</span>
+                <span>Receive healthcare support requests digitally through a simple online form.</span>
+              </li>
+              <li className="flex items-start space-x-3 text-slate-700 leading-relaxed text-sm sm:text-base">
+                <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-primary-100 text-primary-650 font-bold">•</span>
+                <span>Understand patient concerns through automatically generated key highlights.</span>
+              </li>
+              <li className="flex items-start space-x-3 text-slate-700 leading-relaxed text-sm sm:text-base">
+                <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-primary-100 text-primary-650 font-bold">•</span>
+                <span>Help patients access information using the built-in FAQ chatbot.</span>
+              </li>
+              <li className="flex items-start space-x-3 text-slate-700 leading-relaxed text-sm sm:text-base">
+                <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-primary-100 text-primary-650 font-bold">•</span>
+                <span>Save volunteer time by simplifying the support request review process.</span>
+              </li>
+              <li className="flex items-start space-x-3 text-slate-700 leading-relaxed text-sm sm:text-base">
+                <span className="flex-shrink-0 flex items-center justify-center h-6 w-6 rounded-full bg-primary-100 text-primary-650 font-bold">•</span>
+                <span>Improve communication and response efficiency for community support services.</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

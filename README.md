@@ -21,11 +21,12 @@ A simple and clean healthcare support web application designed to help patients 
    - Contains 10 pre-loaded healthcare FAQs that users can query via direct buttons or typing.
    - Utilizes smart keyword-matching local logic with a fallback answer for unrecognized inputs, operating 100% client-side.
 
-## NGO Use Case
-Non-governmental organizations (NGOs) and community clinics can use CareConnect to:
-- **Collect support requests online**: Centralize intake forms for patients needing help.
-- **Understand patient concerns**: Review automatically extracted highlights to triage urgent support check-ins instantly.
-- **Provide immediate self-help**: Empower patients to query the FAQ chatbot for answers to standard questions instantly, reducing coordinator intake load.
+## How NGOs Can Use CareConnect
+- Receive healthcare support requests digitally through a simple online form.
+- Understand patient concerns through automatically generated key highlights.
+- Help patients access information using the built-in FAQ chatbot.
+- Save volunteer time by simplifying the support request review process.
+- Improve communication and response efficiency for community support services.
 
 ## Local Development Setup
 
